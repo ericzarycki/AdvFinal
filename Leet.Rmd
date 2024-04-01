@@ -1,0 +1,57 @@
+---
+title: "Leet"
+author: "Eric Zarycki"
+date: "2024-04-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Leet Package Documentation
+
+## Overview
+The "leet" package provides R programmers with a collection of functions to solve LeetCode problems within the R environment. Each function within the package is designed to address a specific problem, offering users efficient solutions and enhancing their problem-solving skills.
+
+## Functions
+
+### `rvstring`
+#### Description
+The `rvstring` function reverses a given string, effectively swapping the characters' positions from the original string's end to its beginning.
+
+#### Inputs
+- `str`: A character vector representing the input string to be reversed.
+
+#### Outputs
+- Returns a character vector with the characters of the input string reversed.
+
+#### Example
+```R
+# Reverse a string
+rvstring("hello")
+Output: "olleh"
+
+# Function used to solve the problem in R
+rvstring <- function(str) {
+    return(rev(str))
+}
+```
+
+### `squaressortedarray`
+#### Description
+The `squaressortedarray` function takes in integer array sorted in non-decreasing order, and returns an array of the squares of each number sorted in non-decreasing order.
+
+#### Inputs
+- `num`: A numeric vector representing the input numbers to be squared and sorted. The input array should be sorted in non-decreasing order.
+
+#### Outputs
+- Returns a numeric vector with the squares of each number from the input array, sorted in non-decreasing order.
+
+#### Example
+```R
+squaressortedarray(c(-4, -2, 0, 1, 3))
+Output: [0, 1, 4, 9, 16]
+```
+
+
